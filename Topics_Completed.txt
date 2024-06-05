@@ -1,0 +1,5 @@
+Variables and their declaration(var , let,  const)
+Datatypes (primitive, reference)    
+Block Scope, Local scope, global scope
+Hoisting 
+Conditional statements(if esle elseif, switch case , ternary operator)

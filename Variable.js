@@ -50,7 +50,42 @@ Symbol
 BigInt 
 
 Non primitive Datatype ( Reference Datatype)
-Object
+Object<- Array
 Function
 
 */
+
+
+
+//primitve -> its stores the values
+//reference -> its stores the reference vlue 
+
+
+let num = 5;
+
+let num2 = num ;
+
+//the values get copied 
+
+num2++;  //increment by 1 
+
+console.log(num,num2);  //5,6
+
+//reference datatype
+
+//          0 1 2 3 
+let arr1 = [2,3,4,5];
+
+
+// let arr2 = arr1;// address get copied 
+
+//let arr2 = [].concat(arr1);
+
+//let arr2 = arr1.slice(0);
+
+let arr2= [...arr1]
+
+
+arr2[0]=1;
+
+console.log(arr1,arr2);// [2,3,4,5] [1,3,4,5]
