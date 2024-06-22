@@ -59,6 +59,17 @@ console.log(str[-1]);//
 
 console.log(str4.split('').reverse().join('')); //
 
+let name ="syed";
+let city = "Hyd";
+
+console.log('my name is '+name+' I live in '+city)
+
+//template literal //String literal 
+
+console.log(`My name is ${name} I live in ${city}`)
+
+//my name is syed I live in Hyd
+
 //string -> array -> reverse-> string
 
 //

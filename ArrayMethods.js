@@ -1,5 +1,5 @@
-///indeex  0 1 2 3
-let arr = [2,3,4,5];
+///indeex  0 1 2 3 4
+let arr = [2,3,4,5,4];
 //length   1 2 3 4
 
 
@@ -20,7 +20,7 @@ arr.push(6);
 console.log(arr);
 
 
-/////unshift
+/////unshift -> add to first index
 
 arr.unshift(1);
 
@@ -35,6 +35,41 @@ console.log(arr)
 arr.shift() //-> removes first elemnt 
 
 console.log(arr)
+
+
+//indexOf -> returns the index where the elemtn occured for first 
+
+console.log('indexOf',arr.indexOf(4));//2
+
+//lastIndexOf -> return lastIndex where element occured for last time in array 
+
+console.log('lastindexOf',arr.lastIndexOf(4))
+
+//slice
+//array.slice(startIndex,endIndex+1)
+
+let arr5 = [2,1,3,5,4];
+
+//[1,3,5];
+let sliced = arr5.slice(1,4)
+
+console.log(sliced);
+
+
+//splice -> remove /add values in at index of array 
+
+//array.splice(startIndex, no of values to remove, values to add)
+
+arr5.splice(2,1,7,9,16);
+
+console.log(arr5)
+
+
+//includes -> returns true if array contains the value passed
+
+console.log(arr5.includes(21))
+
+
 
 
 
@@ -130,4 +165,37 @@ const revStr = arr4.map((str)=> str.split('').reverse().join(''));
 //filter 
 
 
-console.log(revStr)
+console.log(revStr);
+
+
+//every -> it return true only if all the values in array satisfies the condition
+
+let arr6 = [5,10,15,120,22];
+
+//action
+
+let everyRes= arr6.map((num,ind)=> num*ind);
+
+
+//   ArrayMap(arr,(num,ind)=>num*ind)
+
+
+console.log('mapRes',everyRes)
+
+
+
+
+//some -> return true if atleast ine value satisfies the condition
+
+let arr7 = [12,21,31,40,32]
+
+let someRes= arr6.some(function(val){return val%5==0});//
+console.log(someRes);
+
+
+//reduce 
+
+
+
+
+

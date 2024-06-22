@@ -1,4 +1,6 @@
 //function 
+
+//Code reusability 
 /*
 function functionName(){
 // code  ///function definition
