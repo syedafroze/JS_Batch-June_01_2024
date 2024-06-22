@@ -58,3 +58,29 @@ const Add = (a,b)=>{
 
 
 console.log(result);
+
+function A(num1){
+   
+  function B(num2){
+   return num1*num2
+  }
+  
+  return B
+ 
+}
+
+
+
+let res2 =  A(2)(3);  ///currying functions
+
+console.log(res2);//
+
+
+/*
+in A 2 
+in B 3
+in C 4
+
+
+
+*/
