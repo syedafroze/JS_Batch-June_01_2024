@@ -57,6 +57,7 @@ const Add = (a,b)=>{
 
 
 
+
 console.log(result);
 
 function A(num1){
@@ -84,3 +85,24 @@ in C 4
 
 
 */
+
+
+function A(fun){
+  let num = 5;
+    console.log("in A");
+    fun(num)
+}
+
+
+
+
+function B(n){  
+  console.log("in B",n);  
+}
+
+
+A(B)
+
+//A function which is passed to another function and called later is called callback function
+
+//A function that accepts another function as its argument is called Higher Order Function.

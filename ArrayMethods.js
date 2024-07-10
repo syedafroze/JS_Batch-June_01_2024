@@ -197,5 +197,86 @@ console.log(someRes);
 
 
 
+let arr10 = [2,3,5,1];
+
+//in points to the indexes
+
+for(let i in arr10){
+  console.log(`${arr10[i]}, ${i}`)
+}
+
+//of points to the values 
+for(let i of arr10){
+  console.log(`${i}`)
+}
+
+//reduce 
 
 
+//sum of the array values
+
+
+let arr = [2,3,4,1,5]; //15
+
+///arrayName.reduce(function(acc,val){return }, intialization)
+
+
+let res = arr.reduce((sum, val)=> sum+val , 0);
+
+console.log(res)
+
+/*
+sum = 0 , val = 2 =>  return 2
+sum = 2  , val = 3 => return 5;
+sum = 5 , val = 4  => return 9
+sum= 9 , val = 1  => 10
+sum = 10 , val = 5 => 15;
+
+return the sum ;
+
+
+*/
+
+
+let arr =[1,3,5,4];
+
+/*
+map will return resultant array with result for each value of array 
+
+filter = > return array with the values that satisfy the condition
+
+forEach => it just loops on array ,it wont return any resultant array
+
+*/
+
+ arr.forEach((val,index)=>{
+  if(val%2===0){
+    arr[index]=val* val
+  }
+ 
+})
+
+console.log(arr)
+
+
+
+/*
+push
+pop
+unshift
+shift
+splice
+slice
+
+map
+filter
+forEach
+reduce
+
+indexOf
+lastIndexOf
+includes
+
+some 
+every 
+*/

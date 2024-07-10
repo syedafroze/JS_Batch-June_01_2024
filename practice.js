@@ -69,3 +69,42 @@ let  arrayFilter = (arrayPassed , fun) => {
 } 
 
 console.log(arrayFilter(arr,function(val,ind){return val%2==0;}));
+
+
+let arr = [2,2,3,4,5,4];
+
+//[2,4]
+
+let res = [... new Set (arr.filter((val)=>arr.indexOf(val)!=arr.lastIndexOf(val)))]
+// let setRes = new Set(res)
+// let finalRes = Array.from(setRes)
+
+console.log(res)
+
+//set 
+
+
+let newSet = new Set(arr);
+
+console.log(Array.from(newSet))
+
+console.log([...newSet])
+
+
+//copying of array 
+
+
+//concat 
+
+let arr2= [].concat(arr)
+console.log(arr2);
+
+
+let arr3 = arr.slice(0);
+console.log(arr3)
+
+//spread operator 
+// ...
+let arr4 = [...arr];
+
+console.log(arr4);  // [[2,2,3,4,5,4]]
